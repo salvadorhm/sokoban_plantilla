@@ -93,9 +93,17 @@ Para llevar un mejor control del avance del desarrollo se utiliza la metodologí
 
 | No. |Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
-| 0. | Cargar el siguiente nivel. | Done | 19/Mar/2024 |
+| 0. | Cargar el siguiente nivel. | ToDo | - |
 
 **Nota:** En este sentido para un mejor control se podrían agregar las columnas asignación (en caso de que sea un trabajo en equipo) y fecha de inicio, para conocer los tiempos que estan llevando realizar cada una de las funciones.
+
+
+### Ejemplo de Kanban trabajo en equipo
+
+| No. | Función | Asignación | ToDo | Doing | Done | Fecha inicio | Fecha terminación |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0. | Cargar el siguiente nivel. | Salvador | - | - | X | 18/Mar/2024 | 19/Mar/2024 |
+| 1. | Repetir el juego hasta terminar el nivel. | Salvador | - |X | - | 19/Mar/2024 | - |
 
 ### 6.1 Funciones generales
 | No. |Función | Kanban | Fecha terminación |
