@@ -1,4 +1,4 @@
-# Sokoban
+# SOKOBAN
 
 ## 1. Objetivo
 
@@ -8,7 +8,7 @@ Programar el juego Sokoban en una versión retro para consola.
 
 ### 1.2 Específicos
 
-- Aplicar los conocimientos básicos de programación orientada a objetos  con python (Clases, Objetos, Métodos, Variables, Arrays, Bucles, Leer desde teclado, Decisiones, etc.).
+- Aplicar los conocimientos básicos de programación orientada a objetos con Python (Clases, Objetos, Métodos, Variables, Arrays, Bucles, Leer desde teclado, Decisiones, etc.).
 
 - Utilizar ingeniería de software para analizar, diseñar y desarrollar el juego.
 
@@ -16,9 +16,11 @@ Programar el juego Sokoban en una versión retro para consola.
 
 - Utilizar Hitos (Milestones) para cada una de las etapas del desarrollo.
 
+- Documentar el código generado.
+
 ## 2. Reglas del juego
 
-El juego sokoban consiste en recorrer un mapa para acomodar cajas en puntos determinados por las metas, y tiene las siguientes reglas:
+El juego sokoban consiste en recorrer un mapa en forma de laberinto para empujar cajas que estan repartidas en el mapa, hacia puntos determinados por las metas, y tiene las siguientes reglas:
 
 1. El personaje se puede mover hacia arriba, abajo, izquierda y derecha.
 2. El personaje solo puede empujar 1 caja hacia arriba, abjo, izquierda o derecha.
@@ -67,10 +69,11 @@ Para moverse en el juego el usuario utilizará alguna de las siguientes letras p
 Nota: El proceso es que se muestra el mapa y se solicita al usuario que escriba la letra hacia donde se quiere mover, despúes de colocar la letra se preciona enter y se actualiza el mapa, este proceso se repite de forma infinita.
 
 
-## 5. Función a implementar
+## 5. Funciones a implementar
 
 Para llevar un mejor control del avance del desarrollo llenar Kanban con los siguientes elementos (ToDo, Doing y Done).
 
+### 5.1 Funciones generales
 | No. |Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 0. | Cargar el siguiente nivel. | - | - |
@@ -79,7 +82,7 @@ Para llevar un mejor control del avance del desarrollo llenar Kanban con los sig
 | 3. | Leer el movimiento. | - | - |
 | 4. | Evaluar el movimiento del usuario. | - | - |
 
-## Derecha
+### 5.2 Derecha
 
 Ejemplo de movimientos Inicio y Fin:
 
@@ -92,33 +95,33 @@ Ejemplo de movimientos Inicio y Fin:
 | 6. | Personaje, meta  | - | [      ] | [      ] |- |
 | 7. | Personaje, caja, espacio | - | [      ] | [      ] | - |
 | 8. | Personaje, caja,  meta | - | [      ] | [      ] | - |
-| 9. | Personaje, caja_meta, espacio | - | [       ] | [       ] | - |
-| 10. |Personaje, caja_meta, meta | - | [       ] | [       ] | - |
-| 11. | Personaje_meta, espacio | - | [       ] | [       ] | - |
-| 12. | Personaje_meta, meta | - | [       ] | [       ] | - |
-| 13. | Personaje_meta, caja, espacio | - | [       ] | [       ] | - |
-| 14. | Personaje_meta, caja, meta | - | [       ] | [       ] | - |
-| 15. | Personaje_meta, caja_meta, espacio | - | [       ] | [       ] | - |
-| 16. | Personaje_meta, caja_meta, meta | - | [       ] | [       ] | - |
+| 9. | Personaje, caja_meta, espacio | - | [] | [] | - |
+| 10. |Personaje, caja_meta, meta | - | [] | [] | - |
+| 11. | Personaje_meta, espacio | - | [] | [] | - |
+| 12. | Personaje_meta, meta | - | [] | [] | - |
+| 13. | Personaje_meta, caja, espacio | - | [] | [] | - |
+| 14. | Personaje_meta, caja, meta | - | [] | [] | - |
+| 15. | Personaje_meta, caja_meta, espacio | - | [] | [] | - |
+| 16. | Personaje_meta, caja_meta, meta | - | [] | [] | - |
 
-## Izquierda
+### 5.3 Izquierda
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
-| 17. | Personaje, espacio | - | [       ] | [       ] | - |
-| 18. | Personaje, meta | - | [       ] | [       ] | - |
-| 19. | Personaje, caja, espacio | - | [       ] | [       ] | - |
-| 20. | Personaje, caja, meta | - | [       ] | [       ] | - |
-| 21. | Personaje, caja_meta, espacio | - | [       ] | [       ] | - |
-| 22. | Personaje, caja_meta, meta | - | [       ] | [       ] | - |
-| 23. | Personaje_meta, espacio | - | [       ] | [       ] | - |
-| 24. | Personaje_meta, meta | - | [       ] | [       ] | - |
-| 25. | Personaje_meta, caja, espacio | - | [       ] | [       ] | - |
-| 26. | Personaje_meta, caja, meta | - | [       ] | [       ] | - |
-| 27. | Personaje_meta, caja_meta, espacio | - | [       ] | [       ] | - |
-| 28. | Personaje_meta, caja_meta, meta | - | [       ] | [       ] | - |
+| 17. | Personaje, espacio | - | [] | [] | - |
+| 18. | Personaje, meta | - | [] | [] | - |
+| 19. | Personaje, caja, espacio | - | [] | [] | - |
+| 20. | Personaje, caja, meta | - | [] | [] | - |
+| 21. | Personaje, caja_meta, espacio | - | [] | [] | - |
+| 22. | Personaje, caja_meta, meta | - | [] | [] | - |
+| 23. | Personaje_meta, espacio | - | [] | [] | - |
+| 24. | Personaje_meta, meta | - | [] | [] | - |
+| 25. | Personaje_meta, caja, espacio | - | [] | [] | - |
+| 26. | Personaje_meta, caja, meta | - | [] | [] | - |
+| 27. | Personaje_meta, caja_meta, espacio | - | [] | [] | - |
+| 28. | Personaje_meta, caja_meta, meta | - | [] | [] | - |
 
-## Arriba
+### 5.4 Arriba
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
@@ -135,7 +138,7 @@ Ejemplo de movimientos Inicio y Fin:
 | 39. | Personaje_meta, caja_meta, espacio | - | [][] | [][] | - |
 | 40. | Personaje_meta, caja_meta, meta | - | [][] | [][] | - |
 
-## Abajo
+### 5.5 Abajo
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
@@ -152,14 +155,18 @@ Ejemplo de movimientos Inicio y Fin:
 | 51. | Personaje_meta, caja_meta, espacio | - | [][] | [][] | - |
 | 52. | Personaje_meta, caja_meta, meta | - | [][] | [][] | - |
 
-## Determina si se completo el nivel o no
+### 5.6 Determina si se completo el nivel
+
+Está función determina si todas las cajas estan en una meta, cuando esto sucede se debe cargar el siguiente nivel de juego.
 
 | No. | Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 53. | Evaluar si el nivel esta terminado (Esto sucede cuando todas las cajas estan sobre las metas), SI el nivel esta terminado cargar el siguiente nivel (Los niveles de juego estarán en archivos de texto independiente). | - | - |
 | 54. | Reiniciar el mapa (Con la letra r, se vuelve a cargar el nivel que se esta jugando) | - | - |
 
-## Función extra
+### 5.7 Función extra
+
+Como parte del reto de programar un Sokoban, hay que agregar alguna función especial al juego, como por ejemplo bajo ciertas condiciones empujar 2 cajas, colocar un temporizador por nivel, etc.
 
 | No. | Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
