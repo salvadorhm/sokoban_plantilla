@@ -12,7 +12,7 @@ Programar el juego Sokoban en una versión retro para consola.
 
 - Utilizar ingeniería de software para analizar, diseñar y desarrollar el juego.
 
-- Utilizar Kanban para dar seguimeinto a las actividades a realizar ToDo, Doing, Done.
+- Utilizar Kanban para dar seguimiento a las actividades a realizar ToDo, Doing, Done.
 
 - Utilizar Hitos (Milestones) para cada una de las etapas del desarrollo.
 
@@ -54,26 +54,28 @@ mapa = [
 - 2 - Metas
 - 3 - Paredes
 - 4 - Piso
-- 5 - Pesonaje meta
-- 6 - Caja meta
+- 5 - Pesonaje_meta
+- 6 - Caja_meta
 
 ## 4. Controles
 
 Para moverse en el juego el usuario utilizará alguna de las siguientes letras para indicar hacia adonde se quiere mover:
 
 - a -> Izquierda
-- s -> Derecha
+- d -> Derecha
 - w -> Arriba
 - s -> Abajo
 
-Nota: El proceso es que se muestra el mapa y se solicita al usuario que escriba la letra hacia donde se quiere mover, despúes de colocar la letra se preciona enter y se actualiza el mapa, este proceso se repite de forma infinita.
+## 5. Modo de juego
+
+El juego consiste mostrar el mapa y solicitar al usuario que escriba la letra hacia donde se quiere mover, despúes de colocar la letra se presiona enter, se evalua el moviento, si es un movimiento valido se realiza el cambio en el array, es decir se actualiza el mapa, y se repite este proceso forma infinita, hasta que se hayan terminado de acomodar todas las cajas sobre las metas.
 
 
-## 5. Funciones a implementar
+## 6. Funciones a implementar
 
 Para llevar un mejor control del avance del desarrollo llenar Kanban con los siguientes elementos (ToDo, Doing y Done).
 
-### 5.1 Funciones generales
+### 6.1 Funciones generales
 | No. |Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 0. | Cargar el siguiente nivel. | - | - |
@@ -82,7 +84,7 @@ Para llevar un mejor control del avance del desarrollo llenar Kanban con los sig
 | 3. | Leer el movimiento. | - | - |
 | 4. | Evaluar el movimiento del usuario. | - | - |
 
-### 5.2 Derecha
+### 6.2 Derecha
 
 Ejemplo de movimientos Inicio y Fin:
 
@@ -104,7 +106,7 @@ Ejemplo de movimientos Inicio y Fin:
 | 15. | Personaje_meta, caja_meta, espacio | - | [] | [] | - |
 | 16. | Personaje_meta, caja_meta, meta | - | [] | [] | - |
 
-### 5.3 Izquierda
+### 6.3 Izquierda
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
@@ -121,7 +123,7 @@ Ejemplo de movimientos Inicio y Fin:
 | 27. | Personaje_meta, caja_meta, espacio | - | [] | [] | - |
 | 28. | Personaje_meta, caja_meta, meta | - | [] | [] | - |
 
-### 5.4 Arriba
+### 6.4 Arriba
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
@@ -138,7 +140,7 @@ Ejemplo de movimientos Inicio y Fin:
 | 39. | Personaje_meta, caja_meta, espacio | - | [][] | [][] | - |
 | 40. | Personaje_meta, caja_meta, meta | - | [][] | [][] | - |
 
-### 5.5 Abajo
+### 6.5 Abajo
 
 | No. | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
@@ -155,7 +157,7 @@ Ejemplo de movimientos Inicio y Fin:
 | 51. | Personaje_meta, caja_meta, espacio | - | [][] | [][] | - |
 | 52. | Personaje_meta, caja_meta, meta | - | [][] | [][] | - |
 
-### 5.6 Determina si se completo el nivel
+### 6.6 Determina si se completo el nivel
 
 Está función determina si todas las cajas estan en una meta, cuando esto sucede se debe cargar el siguiente nivel de juego.
 
@@ -164,7 +166,7 @@ Está función determina si todas las cajas estan en una meta, cuando esto suced
 | 53. | Evaluar si el nivel esta terminado (Esto sucede cuando todas las cajas estan sobre las metas), SI el nivel esta terminado cargar el siguiente nivel (Los niveles de juego estarán en archivos de texto independiente). | - | - |
 | 54. | Reiniciar el mapa (Con la letra r, se vuelve a cargar el nivel que se esta jugando) | - | - |
 
-### 5.7 Función extra
+### 6.7 Función extra
 
 Como parte del reto de programar un Sokoban, hay que agregar alguna función especial al juego, como por ejemplo bajo ciertas condiciones empujar 2 cajas, colocar un temporizador por nivel, etc.
 
