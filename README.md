@@ -49,22 +49,28 @@ mapa = [
 
 ### 3.2 Lista de elementos
 
-- 0 - Personaje
-- 1 - Cajas
-- 2 - Metas
-- 3 - Paredes
-- 4 - Piso
-- 5 - Pesonaje_meta
-- 6 - Caja_meta
+Para esta versión del sokoban se utilizarán numeros para representar cada uno de los elementos del juego.
+
+| Número | Interpretación |
+| --- | --- |
+| 0 | Personaje |
+| 1 | Cajas |
+| 2 | Metas |
+| 3 | Paredes |
+| 4 | Piso |
+| 5 | Pesonaje_meta |
+| 6 | Caja_meta |
 
 ## 4. Controles
 
 Para moverse en el juego el usuario utilizará alguna de las siguientes letras para indicar hacia adonde se quiere mover:
 
-- a -> Izquierda
-- d -> Derecha
-- w -> Arriba
-- s -> Abajo
+| Letra | Dirección del movimiento |
+| -- | -- |
+| a | Izquierda |
+| d | Derecha |
+| w | Arriba |
+| s | Abajo |
 
 ## 5. Modo de juego
 
@@ -73,7 +79,23 @@ El juego consiste mostrar el mapa y solicitar al usuario que escriba la letra ha
 
 ## 6. Funciones a implementar
 
-Para llevar un mejor control del avance del desarrollo llenar Kanban con los siguientes elementos (ToDo, Doing y Done).
+Después de realizar un análisis del juego sokoban se identifican funciones necesarias para completarlo, a continuación se crea una tabla con la lista de estas funciones para tener un mejor control sobre el avance del desarrollo del juego.
+
+Para llevar un mejor control del avance del desarrollo se utiliza la metodología Kanban, indicando en que estatus de desarrollo se encuentra cada función del juego
+
+| Valor | Interpretación |
+| -- | -- |
+| ToDo | Por hacer |
+| Doing | Programando y validando |
+| Done | Programada y validada con éxito |
+
+### Ejemplo de seguimiento:
+
+| No. |Función | Kanban | Fecha terminación |
+| --- | --- | --- | --- |
+| 0. | Cargar el siguiente nivel. | Done | 19/Mar/2024 |
+
+**Nota:** En este sentido para un mejor control se podrían agregar las columnas asignación (en caso de que sea un trabajo en equipo) y fecha de inicio, para conocer los tiempos que estan llevando realizar cada una de las funciones.
 
 ### 6.1 Funciones generales
 | No. |Función | Kanban | Fecha terminación |
