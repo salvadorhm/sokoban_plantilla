@@ -81,7 +81,14 @@ class Soko:
             self.mapa[self.personaje_fila][self.personaje_columna] = self.PISO
             self.mapa[self.personaje_fila][self.personaje_columna + 1] = self.PERSONAJE_META
             self.personaje_columna += 1
-        # TODO: Movimiento 7
+        # Movimiento 7 (personaje, caja) -> (caja, personaje):
+        if (
+            self.mapa[self.personaje_fila][self.personaje_columna] == self.PERSONAJE
+            and self.mapa[self.personaje_fila][self.personaje_columna + 1] == self.CAJA
+        ):
+            self.mapa[self.personaje_fila][self.personaje_columna] = self.CAJA
+            self.mapa[self.personaje_fila][self.personaje_columna + 1] = self.PERSONAJE
+            self.personaje_columna += 1
         # TODO: Movimiento 8
         # TODO: Movimiento 9
         # TODO: Movimiento 10
