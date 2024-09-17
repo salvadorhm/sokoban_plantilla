@@ -73,7 +73,14 @@ class Soko:
             # Actualiza la posicion del personaje
             self.personaje_columna += 1
         # PROGRAMAR LOS SIGUIENTES ELIF QUE CORRESPONDEN A CADA UNO DE LOS MOVIMIENTOS VALIDOS
-        # TODO: Movimiento 6 (personaje, meta) -> (piso, personaje_meta)
+        # Movimiento 6 (personaje, meta) -> (piso, personaje_meta):
+        if (
+            self.mapa[self.personaje_fila][self.personaje_columna] == self.PERSONAJE
+            and self.mapa[self.personaje_fila][self.personaje_columna + 1] == self.META
+        ):
+            self.mapa[self.personaje_fila][self.personaje_columna] = self.PISO
+            self.mapa[self.personaje_fila][self.personaje_columna + 1] = self.PERSONAJE_META
+            self.personaje_columna += 1
         # TODO: Movimiento 7
         # TODO: Movimiento 8
         # TODO: Movimiento 9
